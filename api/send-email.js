@@ -38,10 +38,12 @@ export default function handler(req, res) {
           <p><strong>Company:</strong> ${company}</p>
           <p><strong>Phone:</strong> ${phone}</p>
           <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Website:</strong> ${website || "Not provided"}</p>
+          <p><strong>Website:</strong> ${website || ""}</p>
           <hr />
-          <p><strong>Message:</strong></p>
-          <p>${message.replace(/\n/g, "<br>")}</p>
+          <p><strong>Message:</strong> ${(message || "").replace(
+            /\n/g,
+            "<br>"
+          )}</p>
         `,
       };
 
