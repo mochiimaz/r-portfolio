@@ -1,10 +1,8 @@
-// /api/send-email.js
-
-const nodemailer = require("nodemailer");
-const cors = require("cors");
+import nodemailer from 'nodemailer';
+import cors from 'cors';
 
 // Initialize CORS middleware
-const corsHandler = cors({ origin: "*" }); // อนุญาตทุก origin (สำหรับ Vercel)
+const corsHandler = cors({ origin: "*" });; // อนุญาตทุก origin (สำหรับ Vercel)
 
 export default function handler(req, res) {
   // ใช้ corsHandler กับ request และ response
@@ -22,7 +20,9 @@ export default function handler(req, res) {
       const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
+          // eslint-disable-next-line no-undef
           user: process.env.EMAIL_USER, // อีเมลของคุณที่ใช้ส่ง
+          // eslint-disable-next-line no-undef
           pass: process.env.EMAIL_APP_PASSWORD, // App Password ที่สร้างจาก Google Account
         },
       });
