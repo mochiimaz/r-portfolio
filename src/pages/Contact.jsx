@@ -248,7 +248,7 @@ function Contact() {
               <textarea
                 id="message"
                 rows="4"
-                // {...register("message", { required: "Message is required." })}
+                {...register("message")}
                 className={`w-full p-2.5 rounded-lg bg-[#FFE3E1] border ${
                   errors.message ? "border-red-500" : "border-[#FF9494]"
                 } ...`}
