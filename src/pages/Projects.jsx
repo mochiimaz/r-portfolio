@@ -15,20 +15,19 @@ const projects = [
     team: [
       {
         name: "Wimonrat Yongsungnern",
-        avatar:
-          "../public/images/83868280_2603860246605948_5353002390238789632_n.jpg",
+        avatar: "/images/83868280_2603860246605948_5353002390238789632_n.jpg",
       },
       {
         name: "Pakorn Chaowachat",
         avatar:
-          "../public/images/19_Messenger_creation_ADE07C52-89B2-4C27-A89C-1EB02628FBBD.jpg",
+          "/images/19_Messenger_creation_ADE07C52-89B2-4C27-A89C-1EB02628FBBD.jpg",
       },
     ],
     images: [
-      "../public/images/1756184537214.jpg",
-      "../public/images/1756184526704.jpg",
-      "../public/images/1756184513940.jpg",
-      "../public/images/1756184520342.jpg",
+      "/images/1756184537214.jpg",
+      "/images/1756184526704.jpg",
+      "/images/1756184513940.jpg",
+      "/images/1756184520342.jpg",
     ],
   },
   {
@@ -44,20 +43,19 @@ const projects = [
     team: [
       {
         name: "Wimonrat Yongsungnern",
-        avatar:
-          "../public/images/83868280_2603860246605948_5353002390238789632_n.jpg",
+        avatar: "/images/83868280_2603860246605948_5353002390238789632_n.jpg",
       },
       {
         name: "Pakorn Chaowachat",
         avatar:
-          "../public/images/19_Messenger_creation_ADE07C52-89B2-4C27-A89C-1EB02628FBBD.jpg",
+          "/images/19_Messenger_creation_ADE07C52-89B2-4C27-A89C-1EB02628FBBD.jpg",
       },
     ],
     images: [
-      "../public/images/Screenshot_9.png",
-      "../public/images/Screenshot_10.png",
-      "../public/images/Screenshot_11.png",
-      "../public/images/Screenshot_12.png",
+      "/images/Screenshot_9.png",
+      "/images/Screenshot_10.png",
+      "/images/Screenshot_11.png",
+      "/images/Screenshot_12.png",
     ],
   },
   {
@@ -66,20 +64,19 @@ const projects = [
     team: [
       {
         name: "Wimonrat Yongsungnern",
-        avatar:
-          "../public/images/83868280_2603860246605948_5353002390238789632_n.jpg",
+        avatar: "/images/83868280_2603860246605948_5353002390238789632_n.jpg",
       },
       {
         name: "Pakorn Chaowachat",
         avatar:
-          "../public/images/19_Messenger_creation_ADE07C52-89B2-4C27-A89C-1EB02628FBBD.jpg",
+          "/images/19_Messenger_creation_ADE07C52-89B2-4C27-A89C-1EB02628FBBD.jpg",
       },
     ],
     images: [
-      "../public/images/Screenshot_13.png",
-      "../public/images/Screenshot_14.png",
-      "../public/images/Screenshot_15.png",
-      "../public/images/Screenshot_16.png",
+      "/images/Screenshot_13.png",
+      "/images/Screenshot_14.png",
+      "/images/Screenshot_15.png",
+      "/images/Screenshot_16.png",
     ],
   },
   {
@@ -92,23 +89,22 @@ const projects = [
     team: [
       {
         name: "Wimonrat Yongsungnern",
-        avatar:
-          "../public/images/83868280_2603860246605948_5353002390238789632_n.jpg",
+        avatar: "/images/83868280_2603860246605948_5353002390238789632_n.jpg",
       },
       { name: "Prapatsorn Kaewsathit", avatar: "/path/to/avatar2.png" },
       { name: "Asamapron Wongcheep", avatar: "/path/to/avatar1.png" },
-      { name: "Jakkapan Thepdet", avatar: "../public/images/640117010009.jpg" },
+      { name: "Jakkapan Thepdet", avatar: "/images/640117010009.jpg" },
       {
         name: "Thanasak Limprayun",
-        avatar: "../public/images/25_received_338929871496950.jpg",
+        avatar: "/images/25_received_338929871496950.jpg",
       },
       { name: "Chayutpol Verapant", avatar: "/path/to/avatar2.png" },
     ],
     images: [
-      "../public/images/ta3UCp.png",
-      "../public/images/2bJ9fY.png",
-      "../public/images/p8NP32.png",
-      "../public/images/n4eTUj.png",
+      "/images/ta3UCp.png",
+      "/images/2bJ9fY.png",
+      "/images/p8NP32.png",
+      "/images/n4eTUj.png",
     ],
   },
   {
@@ -121,16 +117,15 @@ const projects = [
     team: [
       {
         name: "Wimonrat Yongsungnern",
-        avatar:
-          "../public/images/83868280_2603860246605948_5353002390238789632_n.jpg",
+        avatar: "/images/83868280_2603860246605948_5353002390238789632_n.jpg",
       },
       { name: "Natnicha Chusuwan", avatar: "/path/to/avatar2.png" },
     ],
     images: [
-      "../public/images/{87C78343-8ABF-4151-BC19-024BB95510B2}.png",
-      "../public/images/Screenshot_1.png",
-      "../public/images/Screenshot_2.png",
-      "../public/images/Screenshot_3.png",
+      "/images/{87C78343-8ABF-4151-BC19-024BB95510B2}.png",
+      "/images/Screenshot_1.png",
+      "/images/Screenshot_2.png",
+      "/images/Screenshot_3.png",
     ],
   },
   {
@@ -143,17 +138,16 @@ const projects = [
     team: [
       {
         name: "Wimonrat Yongsungnern",
-        avatar:
-          "../public/images/83868280_2603860246605948_5353002390238789632_n.jpg",
+        avatar: "/images/83868280_2603860246605948_5353002390238789632_n.jpg",
       },
       { name: "Natnicha Chusuwan", avatar: "/path/to/avatar2.png" },
-      { name: "Jakkapan Thepdet", avatar: "../public/images/640117010009.jpg" },
+      { name: "Jakkapan Thepdet", avatar: "/images/640117010009.jpg" },
     ],
     images: [
-      "../public/images/Screenshot_4.png",
-      "../public/images/Screenshot_5.png",
-      "../public/images/Screenshot_6.png",
-      "../public/images/Screenshot_7.png",
+      "/images/Screenshot_4.png",
+      "/images/Screenshot_5.png",
+      "/images/Screenshot_6.png",
+      "/images/Screenshot_7.png",
     ],
   },
   {
@@ -169,15 +163,14 @@ const projects = [
     team: [
       {
         name: "Wimonrat Yongsungnern",
-        avatar:
-          "../public/images/83868280_2603860246605948_5353002390238789632_n.jpg",
+        avatar: "/images/83868280_2603860246605948_5353002390238789632_n.jpg",
       },
     ],
     images: [
-      "../public/images/06-ไม่นะ...เขิล.png",
-      "../public/images/08-อะไรนะ..ไม่ได้ยินเลย.png",
-      "../public/images/12-ตกหลุมรักแล้วจ้า.png",
-      "../public/images/Screenshot_8.png",
+      "/images/06-ไม่นะ...เขิล.png",
+      "/images/08-อะไรนะ..ไม่ได้ยินเลย.png",
+      "/images/12-ตกหลุมรักแล้วจ้า.png",
+      "/images/Screenshot_8.png",
     ],
   },
 ];
