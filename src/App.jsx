@@ -27,7 +27,7 @@ function App() {
     <div className="flex min-h-screen bg-[#FFF8F7]">
       <Sidebar />
       {/* เพิ่ม padding ให้เนื้อหาเพื่อความสวยงาม */}
-      <main className="flex-grow p-6 ml-24 md:ml-0">
+      <main className="flex-grow p-6">
         <Routes>
           <Route path="/" element={<WelcomeSection />} />
           <Route path="/about" element={<About />} />
