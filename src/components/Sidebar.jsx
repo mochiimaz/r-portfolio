@@ -44,10 +44,17 @@ function Sidebar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handleMobileLinkClick = () => {
+    if (window.innerWidth < 768) {
+      setIsSidebarOpen(false);
+    }
+  };
+
   const NavItem = ({ to, icon, children }) => (
     <li>
       <NavLink
         to={to}
+        onClick={handleMobileLinkClick}
         className={({ isActive }) =>
           `flex items-center p-3 my-2 rounded-lg hover:bg-[#FFCBCB] transition-colors duration-200 ${
             isActive ? "bg-[#FFCBCB] text-red-900 font-semibold" : ""
@@ -70,14 +77,11 @@ function Sidebar() {
     <>
       <button
         onClick={toggleSidebar}
-        className={`md:hidden fixed top-1/2 -translate-y-1/2 z-50 
-                   bg-[#FF9494] text-white w-7 h-16 flex items-center justify-center 
-                   transition-transform duration-300 ease-in-out
-                   ${
-                     isSidebarOpen
-                       ? "left-64 rounded-r-lg"
-                       : "left-0 rounded-r-lg"
-                   }`}
+        className={`md:hidden fixed top-1/2 -translate-y-1/2 z-50
+              bg-[#FF9494] text-white w-8 h-16 rounded-r-lg 
+              flex items-center justify-center 
+              transition-all duration-300 ease-in-out
+              ${isSidebarOpen ? "left-64" : "left-0"}`}
         aria-label="Toggle Sidebar"
       >
         {isSidebarOpen ? "<" : ">"}
@@ -85,14 +89,14 @@ function Sidebar() {
 
       <aside
         className={`bg-[#FFE3E1] text-[#FF9494] h-screen flex-shrink-0 flex flex-col z-40 top-0 
-          transition-all duration-300 ease-in-out
-          fixed md:sticky
-          ${
-            isSidebarOpen
-              ? "w-64 translate-x-0"
-              : "w-64 -translate-x-full md:w-24 md:translate-x-0"
-          }
-        `}
+  transition-transform duration-300 ease-in-out
+  fixed md:sticky
+  ${
+    isSidebarOpen
+      ? "w-64 translate-x-0"
+      : "w-64 -translate-x-full md:w-24 md:translate-x-0"
+  }
+`}
       >
         {/* Header (ปุ่ม hamburger ข้างในจะใช้สำหรับ Desktop เท่านั้น) */}
         <div className="flex items-center mb-8 p-4">
