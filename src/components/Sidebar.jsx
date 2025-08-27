@@ -71,7 +71,7 @@ function Sidebar() {
       <button
         onClick={toggleSidebar}
         className={`md:hidden fixed top-1/2 -translate-y-1/2 z-50 
-                   bg-[#FF9494] text-white w-5 h-16 flex items-center justify-center 
+                   bg-[#FF9494] text-white w-7 h-16 flex items-center justify-center 
                    transition-transform duration-300 ease-in-out
                    ${
                      isSidebarOpen
