@@ -74,7 +74,7 @@ function Contact() {
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-start">
           {/* ส่วนของฟอร์ม (ซ้าย) */}
           <motion.div
-            className="bg-[#FFE3E1] p-8 rounded-lg shadow-xl border border-[#FF9494]"
+            className="bg-[#FFE3E1] p-5 rounded-lg shadow-xl border border-[#FF9494]"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -328,7 +328,7 @@ function Contact() {
 
           {/* ส่วนของข้อมูลติดต่อ (ขวา) */}
           <motion.div
-            className="bg-[#FFE3E1] p-8 rounded-lg shadow-xl border border-[#FF9494] lg:mt-0"
+            className="bg-[#FFE3E1] p-5 rounded-lg shadow-xl border border-[#FF9494] lg:mt-0"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -337,43 +337,63 @@ function Contact() {
               My Contact Details
             </h3>
             <p className="text-gray-700 mb-6">
-              I am a fast learner, patient, diligent, and kind. I am eager to learn and grow with the organization!
+              I am a fast learner, patient, diligent, and kind. I am eager to
+              learn and grow with the organization!
             </p>
 
             <div className="space-y-4 text-gray-800">
-              <div className="flex items-center">
-                <FaEnvelope className="text-[#FF9494] text-xl mr-3" />
-                <span>{myContactInfo.email}</span>
+              {/* Email */}
+              <div className="flex items-start">
+                <div className="w-8 flex-shrink-0 flex justify-center pt-1">
+                  <FaEnvelope className="text-[#FF9494] text-xl" />
+                </div>
+                <span className="break-words">{myContactInfo.email}</span>
               </div>
-              <div className="flex items-center">
-                <FaPhone className="text-[#FF9494] text-xl mr-3" />
-                <span>{myContactInfo.phone}</span>
+
+              {/* Phone */}
+              <div className="flex items-start">
+                <div className="w-8 flex-shrink-0 flex justify-center pt-1">
+                  <FaPhone className="text-[#FF9494] text-xl" />
+                </div>
+                <span className="break-words">{myContactInfo.phone}</span>
               </div>
-              <div className="flex items-center">
-                <FaMapMarkerAlt className="text-[#FF9494] text-xl mr-3" />
-                <span>{myContactInfo.location}</span>
+
+              {/* Location */}
+              <div className="flex items-start">
+                <div className="w-8 flex-shrink-0 flex justify-center pt-1">
+                  <FaMapMarkerAlt className="text-[#FF9494] text-xl" />
+                </div>
+                <span className="break-words">{myContactInfo.location}</span>
               </div>
+
+              {/* GitHub */}
               {myContactInfo.github && (
-                <div className="flex items-center">
-                  <FaGithub className="text-[#FF9494] text-xl mr-3" />
+                <div className="flex items-start">
+                  <div className="w-8 flex-shrink-0 flex justify-center pt-1">
+                    <FaGithub className="text-[#FF9494] text-xl" />
+                  </div>
                   <a
                     href={myContactInfo.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline"
+                    className="hover:underline break-words"
                   >
                     GitHub Link (Click !)
                   </a>
                 </div>
               )}
+
+              {/* LinkedIn */}
               {myContactInfo.linkedin && (
-                <div className="flex items-center">
-                  <FaLinkedin className="text-[#FF9494] text-xl mr-3" />
+                <div className="flex items-start">
+                  <div className="w-8 flex-shrink-0 flex justify-center pt-1">
+                    <FaLinkedin className="text-[#FF9494] text-xl" />
+                  </div>
                   <a
                     href={myContactInfo.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline"
+                    className="hover:underline break-words"
                   >
                     LinkedIn Link (Click !)
                   </a>
