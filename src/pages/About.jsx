@@ -98,7 +98,7 @@ function About() {
                 custom={index}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true , amount: 0.2}}
                 variants={itemVariant}
                 className="flex flex-col md:flex-row md:items-start"
               >
@@ -127,7 +127,7 @@ function About() {
                 custom={index}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true , amount: 0.2 }}
                 variants={itemVariant}
                 className="flex flex-col md:flex-row md:items-start"
               >
@@ -154,7 +154,7 @@ function About() {
                 custom={index}
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: true , amount: 0.2}}
                 transition={{
                   delay: index * 0.2,
                   type: "spring",
@@ -171,7 +171,7 @@ function About() {
         <div className="flex justify-center space-x-4 text-lg font-bold pt-10">
           <Link
             to="/projects"
-            className="px-6 py-3 border border-[#FF9494] border border-3 text-[#FF9494] rounded-lg hover:bg-[#FFD1D1] hover:text-[#FF9494] transition"
+            className="px-6 py-2 border-2 border-[#FF9494] text-[#FF9494] rounded-lg hover:bg-[#FFD1D1] hover:text-white transition duration-300"
           >
             Next to My Projects
           </Link>
