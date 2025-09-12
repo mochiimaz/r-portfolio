@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaShareAlt, FaExpand, FaTimes } from "react-icons/fa"; // เพิ่มไอคอนที่จำเป็น
 
+// edt profile
 const projects = [
   {
     title: "Booking Book (React)",
